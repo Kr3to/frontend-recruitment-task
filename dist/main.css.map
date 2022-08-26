@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css","sourcesContent":[]}
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA,GACI,oBCCJ,CDCI,KACI,qBCCR","file":"main.css","sourcesContent":["h1{\r\n    background-color: red;\r\n\r\n    p{\r\n        background-color: blue;\r\n    }\r\n}","h1 {\n  background-color: red;\n}\nh1 p {\n  background-color: blue;\n}"]}
