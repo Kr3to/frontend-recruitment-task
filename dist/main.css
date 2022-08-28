@@ -1,2 +1,2 @@
-h1{background-color:red}h1 p{background-color:blue}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");*{box-sizing:border-box;margin:0;padding:0}.module{align-content:center;align-items:center;flex-direction:column;font-family:Roboto,sans-serif;text-align:center}.module,.module .section__imagebox{display:flex;justify-content:center}.module .section__imagebox img{max-width:505px;-o-object-fit:cover;object-fit:cover;width:100%}.module .description__button{align-items:flex-start;background:#e4c1ae;border:none;border-radius:32px;color:#fff;display:flex;flex-direction:row;gap:10px;height:48px;outline:none;padding:16px 40px;width:128px}
 /*# sourceMappingURL=main.css.map */

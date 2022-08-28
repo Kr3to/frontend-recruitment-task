@@ -1,7 +1,44 @@
-h1{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
-    p{
-        background-color: green;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    //outline: solid limegreen 1px;
+}
+
+.module{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  
+    .section__imagebox{
+      display: flex;
+      justify-content: center;
+  
+      img{
+        width: 100%;
+        max-width: 505px;
+        object-fit: cover;
+      }
     }
+
+    .description__button{
+        background: #e4c1ae;
+        color: white;
+        width: 128px;
+        height: 48px;
+        gap: 10px;
+        padding: 16px 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border: none;
+        outline: none;
+        border-radius: 32px;
+      }
 }
