@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
-*{
+*, *::after, *::before{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -45,6 +45,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 100%;
+        cursor: pointer;
     }
 
     .section__description{
@@ -63,9 +64,65 @@
         }
     
         .description__text{
+            padding: 1rem;
             font-weight: 300;
             font-size: 16px;
             line-height: 24px;
         }
+    }
+
+    .popup__overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0; 
+        visibility: hidden; 
+        transition: .3s;
+
+        .popup__content{
+            position: relative;
+            width: 75%;
+            padding: 3rem 2rem;
+            text-align: left;
+            background-color: white;
+            opacity: 0; 
+            visibility: hidden; 
+
+            h2{
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 120%;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 150%;
+
+                span{
+                    font-weight: 700;
+                }
+            }
+
+            .popup__close {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .popup__overlay.active, .popup__content.active{
+        opacity: 1;
+        visibility: visible;
     }
 }

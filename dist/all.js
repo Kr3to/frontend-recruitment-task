@@ -1,1 +1,1 @@
-console.log("test");
+const overlay=document.querySelector(".popup__overlay"),content=document.querySelector(".popup__content"),closebtn=document.querySelector(".popup__close"),btn=document.querySelector(".description__button"),popupOpen=()=>{overlay.classList.add("active"),content.classList.add("active")},popupClose=()=>{overlay.classList.remove("active"),content.classList.remove("active")};btn.addEventListener("click",popupOpen),overlay.addEventListener("click",popupClose),closebtn.addEventListener("click",popupClose);
