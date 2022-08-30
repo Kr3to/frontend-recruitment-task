@@ -136,7 +136,7 @@
 
 @media(min-width: 768px){
     .module{
-        margin-top: 1rem;
+        margin-top: 96px;
         flex-direction: row;      
   
         .section__description{
@@ -149,7 +149,6 @@
         .popup__content.active{
             align-items: flex-start;
             padding: 56px 95px;
-            width: 920px;
         }
     }
 }
@@ -157,11 +156,33 @@
 @media(min-width: 1440px){
     .module{
         margin: auto;
-        margin-top: 1rem;
+        margin-top: 96px;
         max-width: 1440px;
 
         .section__description{
             margin-left: 95px;
+
+            .description__text{
+                padding: 0;
+                margin-top: 24px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .popup__content{
+            h2{
+                margin-bottom: 24px;
+            }
+        }
+
+        .popup__close {
+            right: 46px;
+            top: 46px;
+        }
+
+        .popup__content.active{
+            width: 920px;
+            min-height: 210px;
         }
     }
 }

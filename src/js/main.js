@@ -33,5 +33,4 @@ closebtn.addEventListener("click", popupClose)
 resetbtn.addEventListener("click", () =>{
     localStorage.clear()
     window.location.reload()
-    this.style.display = "none"
 })
