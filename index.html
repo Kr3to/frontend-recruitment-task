@@ -23,15 +23,15 @@
                 <h1 class="description__title">Lorem Ipsum</h1>
                 <p class="description__text">Infinitely scalable, feature-rich and cloud-native data management and protection for modern
                 and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-                <button class="button" aria-label="open popup">Button</button>
+                <button data-modal-target=".target" class="button" aria-label="open popup">Button</button>
             </div>
             <div class="section__popup">
                 <div class="popup__overlay">
-                    <div class="popup__content">
+                    <div class="popup__content target">
                         <h2>Alert!</h2>
                         <p class="popup__text">You have clicked <span class="popup__count">X</span><span class="count__text"> times </span> to related button</p>
                         <button class="button count__reset" aria-label="reset counter">Reset</button>
-                        <p class="popup__close" aria-label="close popup">&#10006;</p>
+                        <p close-popup class="popup__close" aria-label="close popup">&#10006;</p>
                     </div>
                 </div>
             </div>
